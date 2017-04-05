@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/propertyTaxLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <ImageView
+        android:id="@+id/propertyTaxImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/propertyTaxLabel"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/property_tax_image"
+        android:cropToPadding="false"
+        android:padding="10dp"
+        android:src="@drawable/propertytax"/>
+
+    <EditText
+        android:id="@+id/property_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/propertyTaxImage"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/value"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/propertyTaxImage"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/property_value"
+        android:paddingTop="7dp"
+        android:text="@string/euro"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/input_property_validation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_value"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_property_validation"
+        android:layout_centerHorizontal="true"
+        android:text="@string/calculate"/>
+
+    <View
+        android:id="@+id/line_break"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/calculateButton"
+        android:layout_margin="10dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_break"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</RelativeLayout>

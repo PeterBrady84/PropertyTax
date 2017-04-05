@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Property Tax</string>
+    <string name="empty_value">Required Field!</string>
+    <string name="invalid_value">Must be > 0 or &#60; 500,000</string>
+    <string name="value">Value</string>
+    <string name="euro">€</string>
+    <string name="calculate">Calculate</string>
+    <string name="property_tax_image">Property Tax Header Image</string>
+    <string name="property_tax_price">Property Tax € %1$s</string>
+</resources>
